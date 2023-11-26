@@ -1,17 +1,34 @@
-// import React, { useState } from 'react';
+import { useState } from "react";
 
 const BmiC = () => {
-  //   const [weight, setWeight] = useState('');
-  //   const [height, setHeight] = useState('');
-  //   const [result, setResult] = useState('');
-  //   const [category, setCategory] = useState('');
+  const [weight, setWeight] = useState("");
+  const [height, setHeight] = useState("");
+  const [result, setResult] = useState("0");
+  const [category, setCategory] = useState("");
 
-  //   const calculateBMI = () =>
+  const calculateBMI = () => {
+    if (!weight || !height) {
+      alert("Please fill all the fields");
+      return;
+    }
+    const heightInMeters = height / 100;
+    const bmiData = weight / (heightInMeters * heightInMeters);
+    const formattedBMI = bmiData.toFixed(2);
+    setResult(formattedBMI);
 
-  //   };
+    if (bmiData < 18.5) {
+      setCategory("Underweight");
+    } else if (bmiData >= 18.5 && bmiData < 24.9) {
+      setCategory("Normal weight");
+    } else if (bmiData >= 25 && bmiData < 29.9) {
+      setCategory("Overweight");
+    } else {
+      setCategory("Obesity");
+    }
+  };
 
   return (
-    <div className="bg-gradient-to-r from-teal-400 to-blue-500 min-h-screen flex items-center justify-center">
+    <div className="bg-gradient-to-r from-teal-400 to-blue-500 p-2 min-h-screen flex items-center justify-center">
       <div
         className="bg-white p-4 md:p-8 rounded shadow-md md:w-96 w-full"
         style={{
@@ -32,8 +49,7 @@ const BmiC = () => {
           <input
             type="text"
             id="weight"
-            //   value={weight}
-            //   onChange={(e) => setWeight(e.target.value)}
+            onChange={(e) => setWeight(e.target.value)}
             className="w-full px-4 py-2 border rounded focus:outline-none focus:border-teal-500 bg-gray-100 text-gray-800 placeholder-gray-500"
           />
         </div>
@@ -45,14 +61,13 @@ const BmiC = () => {
           <input
             type="text"
             id="height"
-            //   value={height}
-            //   onChange={(e) => setHeight(e.target.value)}
+            onChange={(e) => setHeight(e.target.value)}
             className="w-full px-4 py-2 border rounded focus:outline-none focus:border-teal-500 bg-gray-100 text-gray-800 placeholder-gray-500"
           />
         </div>
 
         <button
-          // onClick={calculateBMI}
+          onClick={calculateBMI}
           className="w-full bg-purple-500 text-white py-2 rounded hover:bg-purple-600 focus:outline-none"
         >
           Calculate BMI
@@ -65,14 +80,14 @@ const BmiC = () => {
           <input
             type="text"
             id="result"
-            //   value={result}
+            value={`You BMI Calculation is ${result}`}
             readOnly
             className="w-full px-4 py-2 border rounded focus:outline-none bg-gray-100 text-gray-800 placeholder-gray-500"
           />
         </div>
 
         <div id="category" className="mt-4 text-gray-700">
-          {/* {category && <p>BMI Category: {category}</p>} */}
+          {category && <p>BMI Category: {category}</p>}
         </div>
       </div>
     </div>
