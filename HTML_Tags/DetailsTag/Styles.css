@@ -1,0 +1,32 @@
+/* Style for the disclosure widget container */
+details {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the summary (the visible heading) */
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: 1px solid #2980b9;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover for better interactivity */
+summary:hover {
+  background-color: #2980b9;
+}
+
+/* Style for the content inside the details element */
+details p {
+  margin-top: 10px;
+  color: #333;
+}
