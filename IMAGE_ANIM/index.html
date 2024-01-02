@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Transition</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      background-color: black;
+    }
+    #main {
+      width: 20%;
+      height: 400px;
+      display: flex;
+      gap: 5px;
+    }
+    #main img {
+      width: 10%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid white;
+      cursor: pointer;
+      transition: 0.3s ease all;
+    }
+    #main img:hover {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <div id="main">
+      <img
+        src="https://i.pinimg.com/564x/76/86/66/768666340bdcec7f64fbc8258a2837cf.jpg"
+        alt="Image 1"
+      />
+      <img
+        src="https://i.pinimg.com/564x/da/84/92/da8492da4ecc6d2fe53afd7600d28c5c.jpg"
+        alt="Image 2"
+      />
+      <img
+        src="https://i.pinimg.com/564x/15/b2/8f/15b28f7fd38c96b87ce5cb83b31f2feb.jpg"
+        alt="Image 3"
+      />
+      <img
+        src="https://i.pinimg.com/564x/11/ac/02/11ac025f33ced67df6354497b3233789.jpg"
+        alt="Image 4"
+      />
+      <img
+        src="https://i.pinimg.com/564x/4a/15/d1/4a15d1b825c0e624287cca7cae76e559.jpg"
+        alt="Image 5"
+      />
+    </div>
+  </body>
+</html>
