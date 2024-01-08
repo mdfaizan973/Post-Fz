@@ -15,7 +15,7 @@ export default function Axios() {
         setDatas(response.data.data);
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Error:-", error);
       });
   }, [page]);
 
