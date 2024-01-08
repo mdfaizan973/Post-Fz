@@ -7,46 +7,43 @@ export default function Axios() {
   useEffect(() => {
     axios
       .get(
-        "https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-coffee"
+        "https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-coffee?limit=5&page=4"
       )
       .then((response) => {
-        console.log("Response:", response.data);
-        setDatas(response.data);
+        console.log("Response:", response.data.data);
+        setDatas(response.data.data);
       })
       .catch((error) => {
         console.error("Error:", error);
       });
   }, []);
-  for (let elem of datas) {
-    console.log(elem.category.image);
-  }
   return (
     <div id="main">
       <table>
         <thead>
           <tr>
-            <th>Category</th>
             <th>Description</th>
             <th>ID</th>
             <th>Images</th>
-            <th>Price</th>
             <th>Title</th>
+
+            <th>₹Price</th>
+            <th>Ingredients</th>
           </tr>
         </thead>
         <tbody>
           {datas.map((ele, i) => (
             <tr key={i}>
-              <td>{ele.title}</td>
-              <td>Description 1</td>
-              <td>1</td>
+              <td>{ele.description}</td> <td>{ele.id}</td>
               <td>
-                <img src={ele.category.image} alt="Product Image 1" />
+                <img src={ele.image} alt="Product Image 1" />
               </td>
-              <td>$19.99</td>
-              <td>Product Title 1</td>
+              <td>{ele.title}</td>
+              <td>₹ {ele.price}</td>
+              <td>{ele.ingredients[0]}</td>
             </tr>
           ))}
-        </tbody>{" "}
+        </tbody>
         <div className="buttons">
           <button>Next</button>
           <button>0</button>
