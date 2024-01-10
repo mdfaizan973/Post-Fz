@@ -28,7 +28,7 @@ export default function Axios() {
   };
 
   if (loading) {
-    return <h1>Loading.......</h1>;
+    return <h1>LODING.......</h1>;
   }
   return (
     <div id="main">
