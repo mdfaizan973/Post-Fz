@@ -11,5 +11,5 @@ function reverseNumber(num) {
 // Example usage
 let originalNumber = 12345;
 let reversedNumber = reverseNumber(originalNumber);
-console.log(`Original:- ${originalNumber}`);
+console.log(`Original:-- ${originalNumber}`);
 console.log(`Reversed:- ${reversedNumber}`);
