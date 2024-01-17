@@ -1,0 +1,24 @@
+/* Reset default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for the list items */
+ul li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Add hover effect */
+ul li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add some spacing between items */
+ul li + li {
+  margin-top: 5px;
+}
