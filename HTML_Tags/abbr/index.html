@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abbreviation Example</title>
+  </head>
+  <style>
+    abbr {
+      text-decoration: underline dotted; /* Dotted underline to indicate it's an abbreviation */
+      cursor: help; /* Change cursor to indicate it's interactive */
+      position: relative;
+    }
+
+    abbr::before {
+      content: attr(
+        title
+      ); /* Display the title attribute content as the tooltip */
+      display: none;
+      position: absolute;
+      background-color: #f0f0f0;
+      padding: 0.2em 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    abbr:hover::before {
+      display: block;
+    }
+  </style>
+  <body>
+    <h2>Abbreviation (`abbr`) Tag</h2>
+    <a href=""></a>
+    <h4>
+      The <abbr title="World Health Organization">WHO</abbr> is a specialized
+      agency of the United Nations.
+    </h4>
+  </body>
+</html>
