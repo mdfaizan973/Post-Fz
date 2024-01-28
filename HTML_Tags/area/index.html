@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Image Map Example</title>
+  </head>
+  <style>
+    h2 {
+      color: rgb(255, 0, 0);
+      text-align: center;
+    }
+    img {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      width: 40%;
+      border-radius: 25px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+  </style>
+  <body>
+    <h2>Area Tag</h2>
+    <img
+      src="https://i.pinimg.com/564x/f4/e7/6b/f4e76be96625fb2f7fc7edefeadfe7bc.jpg"
+      alt="image"
+      usemap="#image-map"
+    />
+    <map name="image-map">
+      <area
+        shape="circle"
+        coords="50,50,150,150"
+        href="https://in.pinterest.com/pin/4644405858777093/"
+        alt="click me"
+      />
+    </map>
+  </body>
+</html>
