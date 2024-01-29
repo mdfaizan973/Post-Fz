@@ -23,3 +23,10 @@ function jan29() {
   // const c;
 }
 // jan29();
+function jan_29() {
+  const array_1 = [1, 2, 3, 4];
+  const array_2 = array_1.fill(0);
+  console.log(array_1);
+  console.log(array_2);
+}
+// jan_29();
