@@ -30,3 +30,11 @@ function jan_29() {
   console.log(array_2);
 }
 // jan_29();
+function jan_30() {
+  let d1 = { name: "faizan" };
+  console.log(delete d1.name);
+
+  let d2 = { name: "faizan" };
+  console.log(delete d2);
+}
+jan_30();
