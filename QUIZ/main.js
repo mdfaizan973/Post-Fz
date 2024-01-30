@@ -48,5 +48,8 @@ function jan_30() {
       console.log("10");
     }
   }
+
+  // ! 3rd code snippet
+  console.log("4" + "3" * "2" - "1");
 }
 // jan_30();
