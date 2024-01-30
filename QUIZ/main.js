@@ -31,10 +31,22 @@ function jan_29() {
 }
 // jan_29();
 function jan_30() {
+  // ! 1st code snippet
   let d1 = { name: "faizan" };
   console.log(delete d1.name);
 
   let d2 = { name: "faizan" };
   console.log(delete d2);
+
+  // ! 2nd code snippet
+  const a = 10;
+  if (a == 5) {
+    console.log("5");
+  } else {
+    console.log("Not 5");
+    if (a == 10) {
+      console.log("10");
+    }
+  }
 }
-jan_30();
+// jan_30();
