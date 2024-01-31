@@ -54,5 +54,11 @@ function jan_30() {
 }
 // jan_30();
 
-function jan_31() {}
+function jan_31() {
+  console.log("Text"[1 + 1]);
+
+  const data = ["a", "b", "c"];
+  const [y, z] = data;
+  console.log(y);
+}
 jan_31();
