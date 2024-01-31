@@ -55,10 +55,12 @@ function jan_30() {
 // jan_30();
 
 function jan_31() {
+  // ! 1st code snippet
   console.log("Text"[1 + 1]);
 
+  // ! 2nd code snippet
   const data = ["a", "b", "c"];
   const [y, z] = data;
   console.log(y);
 }
-jan_31();
+// jan_31();
