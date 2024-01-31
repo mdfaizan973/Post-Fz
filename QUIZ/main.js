@@ -53,3 +53,6 @@ function jan_30() {
   console.log("4" + "3" * "2" - "1");
 }
 // jan_30();
+
+function jan_31() {}
+jan_31();
