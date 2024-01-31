@@ -62,5 +62,10 @@ function jan_31() {
   const data = ["a", "b", "c"];
   const [y, z] = data;
   console.log(y);
+
+  // ! 3rd code snippet
+
+  console.log("❤️" === "❤️");
+  console.log("❤️" == "❤️");
 }
 // jan_31();
