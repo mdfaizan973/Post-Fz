@@ -67,5 +67,9 @@ function jan_31() {
 
   console.log("❤️" === "❤️");
   console.log("❤️" == "❤️");
+
+  // ! 4th code snippet
+  let a = false || {} || null;
+  console.log(a);
 }
-// jan_31();
+jan_31();
