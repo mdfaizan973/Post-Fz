@@ -71,5 +71,14 @@ function jan_31() {
   // ! 4th code snippet
   let a = false || {} || null;
   console.log(a);
+
+  let b = null || false || "";
+  console.log(b);
 }
-jan_31();
+// jan_31();
+
+function fab_1() {
+  console.log(Promise.resolve(5)); // Promise { 5 }
+  console.log(Promise.reject(5)); // Error
+}
+fab_1();
