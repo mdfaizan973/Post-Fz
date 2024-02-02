@@ -78,7 +78,22 @@ function jan_31() {
 // jan_31();
 
 function fab_1() {
+  // ! 1st code snippet
   console.log(Promise.resolve(5)); // Promise { 5 }
   console.log(Promise.reject(5)); // Error
 }
-fab_1();
+// fab_1();
+
+function fab_2() {
+  // ! 1st code snippet
+
+  let a = [] || 0 || true;
+  console.log(a);
+
+  // ! 2nd code snippet
+
+  let array = [1, 2, 3, 4, 5];
+  array = [];
+  console.log(array.length);
+}
+fab_2();
