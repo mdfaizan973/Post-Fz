@@ -103,10 +103,24 @@ function fab_4() {
   if (true) {
     var x = 10;
   }
-  // console.log(x);
+  console.log(x);
   if (true) {
     let y = 12;
   }
-  // console.log(y);
+  console.log(y);
+
+  // ! 2nd code snippet
+  try {
+    console.log("Try");
+  } catch (err) {
+    console.log("Error catched");
+  }
+
+  // ! 3rd code snippet
+  try {
+    throw new Error("This is Error");
+  } catch (err) {
+    console.log("Error catched");
+  }
 }
 fab_4();
