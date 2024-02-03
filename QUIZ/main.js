@@ -96,4 +96,17 @@ function fab_2() {
   array = [];
   console.log(array.length);
 }
-fab_2();
+// fab_2();
+function fab_4() {
+  // ! 1st code snippet
+
+  if (true) {
+    var x = 10;
+  }
+  // console.log(x);
+  if (true) {
+    let y = 12;
+  }
+  // console.log(y);
+}
+fab_4();
