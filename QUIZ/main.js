@@ -100,14 +100,14 @@ function fab_2() {
 function fab_4() {
   // ! 1st code snippet
 
-  if (true) {
-    var x = 10;
-  }
-  console.log(x);
-  if (true) {
-    let y = 12;
-  }
-  console.log(y);
+  // if (true) {
+  //   var x = 10;
+  // }
+  // console.log(x);
+  // if (true) {
+  //   let y = 12;
+  // }
+  // console.log(y);
 
   // ! 2nd code snippet
   try {
