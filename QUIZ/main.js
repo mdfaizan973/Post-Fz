@@ -129,5 +129,13 @@ function fab_99() {
   // ! 1st code snippet
   let set = new Set([1, 1, 2, 3, 4]);
   console.log(set);
+
+  // ! 2nd code snippet
+  console.log(5 + "1");
+  console.log("5" - 1);
+
+  // ! 3rd code snippet
+  const say = "Hello JavaScript";
+  console.log(say);
 }
 fab_99();
