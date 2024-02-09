@@ -123,4 +123,11 @@ function fab_4() {
     console.log("Error catched");
   }
 }
-fab_4();
+// fab_4();
+
+function fab_99() {
+  // ! 1st code snippet
+  let set = new Set([1, 1, 2, 3, 4]);
+  console.log(set);
+}
+fab_99();
