@@ -138,4 +138,4 @@ function fab_99() {
   const say = "Hello JavaScript";
   console.log(say);
 }
-fab_99();
+// fab_99();
