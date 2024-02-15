@@ -139,3 +139,11 @@ function fab_99() {
   console.log(say);
 }
 // fab_99();
+function fab_15() {
+  if ([]) {
+    console.log("Hello");
+  } else {
+    console.log("Bye");
+  }
+}
+fab_15();
