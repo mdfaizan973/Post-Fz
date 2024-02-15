@@ -162,5 +162,11 @@ function fab_15() {
 
   let x = true + false;
   console.log(x);
+
+  for (var i = 0; i < 3; i++) {
+    setTimeout(() => {
+      console.log(i);
+    }, 1);
+  }
 }
-fab_15();
+// fab_15();
