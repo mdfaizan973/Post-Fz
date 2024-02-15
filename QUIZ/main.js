@@ -140,10 +140,27 @@ function fab_99() {
 }
 // fab_99();
 function fab_15() {
+  // ! 1st code snippet
+
   if ([]) {
     console.log("Hello");
   } else {
     console.log("Bye");
   }
+
+  // ! 2nd code snippet
+  console.log(null >= 0);
+
+  // ! 3rd code snippet
+  let a = 10,
+    b = 10,
+    c = 10;
+  if ((a == b) == c) cosole.log("Hello");
+  else console.log("Bye");
+
+  // ! 4th code snippet
+
+  let x = true + false;
+  console.log(x);
 }
 fab_15();
