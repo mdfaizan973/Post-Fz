@@ -170,3 +170,15 @@ function fab_15() {
   }
 }
 // fab_15();
+
+function fab_17() {
+  // new keyword creates object and object  ! == number
+
+  let a = 3;
+  let b = new Number(3);
+  let c = 3;
+  console.log(a == b);
+  console.log(a === b);
+  console.log(b === c);
+}
+fab_17();
