@@ -181,4 +181,4 @@ function fab_17() {
   console.log(a === b);
   console.log(b === c);
 }
-fab_17();
+// fab_17();
