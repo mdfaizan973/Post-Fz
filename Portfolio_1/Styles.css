@@ -1,0 +1,64 @@
+/* Primary color - #1e242b  */
+/* secondry color - #2ad87f */
+* {
+  padding: 0;
+  margin: 0;
+  background-color: #1e242b;
+}
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav .logo {
+  font-size: 1.5rem;
+}
+.links {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+.links .link {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.links .link a {
+  text-decoration: none;
+  color: white;
+}
+.links .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2ad87f;
+  transition: width 0.3s ease;
+}
+.links .link a:hover {
+  color: #2ad87f;
+}
+.links .link a:hover::after {
+  width: 100%;
+  color: #2ad87f;
+}
+
+/* responsiveness  for mobile view */
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
