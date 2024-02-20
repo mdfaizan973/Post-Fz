@@ -62,3 +62,38 @@ nav .logo {
     margin-top: 5px;
   }
 }
+
+/* Home section */
+#home {
+  width: 90%;
+  border: 1px solid green;
+  height: 85vh;
+  margin: 2rem auto;
+  display: flex;
+}
+.content_section {
+  width: 50%;
+  height: 100%;
+  border: 1px solid white;
+}
+.image_section {
+  width: 50%;
+  height: 100%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img_container {
+  height: 65%;
+  width: 65%;
+  border-radius: 5%;
+  border: 3px solid rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.img_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
