@@ -182,3 +182,19 @@ function fab_17() {
   console.log(b === c);
 }
 // fab_17();
+
+function fab_21() {
+  console.log(this);
+  console.log(window);
+  console.log(this == window);
+}
+// fab_21();
+
+function fab_23() {
+  console.log([] == "");
+  console.log([] == []);
+  console.log([] == {});
+  console.log({} == {});
+  // console.log([] === {});
+}
+fab_23();
