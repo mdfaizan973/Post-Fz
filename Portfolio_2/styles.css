@@ -1,0 +1,106 @@
+.main1 {
+  width: 100%;
+  height: 95vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.girlimg {
+  width: 35%;
+  position: absolute;
+  left: 65%;
+  top: 15%;
+}
+.blur {
+  position: absolute;
+  top: 14%;
+  left: 8%;
+  font-size: 6rem;
+  font-family: ccc;
+  color: #0000001e;
+  white-space: nowrap;
+  font-weight: 200;
+  font-style: italic;
+}
+.h1text1 {
+  position: absolute;
+  top: 28%;
+  left: 16.5%;
+  font-size: 4rem;
+  font-family: ccc;
+  color: #000000ac;
+  white-space: nowrap;
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+
+.h1text2 {
+  position: absolute;
+  top: 42%;
+  left: 16%;
+  font-size: 3rem;
+  font-family: ccc;
+  font-style: italic;
+  color: #ffb949cc;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+.h1text3 {
+  position: absolute;
+  top: 54%;
+  left: 16%;
+  font-size: 1rem;
+  font-family: ccc;
+  font-style: oblique;
+  color: #000000;
+  width: 45%;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+.email {
+  position: absolute;
+  top: 70%;
+  left: 16%;
+  font-size: 1rem;
+  font-family: ccc;
+  font-style: oblique;
+  color: #000000;
+  width: 45%;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.email1 {
+  position: absolute;
+  top: 74%;
+  left: 16%;
+  font-size: 1rem;
+  font-family: psc;
+  color: #00000099;
+  letter-spacing: 2px;
+  width: 45%;
+  font-weight: 900;
+  text-decoration: none;
+}
+.resume_btn {
+  position: absolute;
+  top: 80%;
+  left: 16%;
+  height: 7vh;
+  width: 10%;
+  font-size: 15px;
+  color: white;
+  font-family: serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background-color: #ffb949;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.resume_btn:hover {
+  background-color: #f1a120;
+}
