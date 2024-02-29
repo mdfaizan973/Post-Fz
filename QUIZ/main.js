@@ -190,11 +190,23 @@ function fab_21() {
 }
 // fab_21();
 
-function fab_23() {
+function fab_29() {
+  // ! 1st code snippet
+
   console.log([] == "");
   console.log([] == []);
   console.log([] == {});
   console.log({} == {});
   // console.log([] === {});
+
+  // ! 2nd code snippet
+
+  const arr = [2, 4, 6, 3, 6];
+  const [, a, , b] = arr;
+  console.log(a, b);
+
+  // ! 3rd code snippet
+  const x = "1" + 1 + "1";
+  console.log(x);
 }
-fab_23();
+fab_29();
