@@ -9,7 +9,7 @@ import {
   Tooltip,
 } from "recharts";
 export default function BarCharts() {
-  // https://dummyjson.com/products
+  //API -  https://dummyjson.com/products
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch(`https://dummyjson.com/products`)
